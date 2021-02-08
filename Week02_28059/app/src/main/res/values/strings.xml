@@ -8,4 +8,11 @@
     <string name="btnKali">Kali</string>
     <string name="btnBagi">Bagi</string>
     <string name="hasil">Hasil</string>
+    <string name="strBtnTambah">Tambah</string>
+    <string name="strBtnKurang">Kurang</string>
+    <string name="strBtnKali">Kali</string>
+    <string name="strBtnBagi">Bagi</string>
+    <string name="strTvHasil">"Hasil : "</string>
+    <string name="strTvAngka2">"Angka 2 : "</string>
+    <string name="stTvAngka1">"Angka 1 : "</string>
 </resources>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grid="http://schemas.android.com/tools"
     android:orientation="vertical">
 
     <LinearLayout
@@ -15,14 +15,15 @@
             android:id="@+id/textView"
             android:layout_width="100dp"
             android:layout_height="33dp"
-            android:text="Angka 1:" />
+            android:text="@string/stTvAngka1" />
 
         <EditText
             android:id="@+id/angka1"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:hint="@string/angka1"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:autofillHints="" />
     </LinearLayout>
 
     <LinearLayout
@@ -34,48 +35,66 @@
             android:id="@+id/textView2"
             android:layout_width="100dp"
             android:layout_height="33dp"
-            android:text="Angka 2:" />
+            android:text="@string/strTvAngka2" />
 
         <EditText
             android:id="@+id/angka2"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:hint="@string/angka2"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:autofillHints="" />
     </LinearLayout>
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp">
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <Button
-                android:id="@+id/btnTambah"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tambah"/>
-            <Button
-                android:id="@+id/btnKurang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Kurang"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <Button
-                android:id="@+id/btnKali"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Kali"/>
-            <Button
-                android:id="@+id/btnBagi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bagi"/>
-        </TableRow>
-    </TableLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:text="@string/strBtnTambah" />
+
+        <Button
+            android:id="@+id/btnKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_marginStart="5dp"
+            android:text="@string/strBtnKurang" />
+
+        <Button
+            android:id="@+id/btnKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            grid:layout_gravity="fill_horizontal"
+            android:text="@string/strBtnKali" />
+
+        <Button
+            android:id="@+id/btnBagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            grid:layout_gravity="fill_horizontal"
+            android:layout_marginStart="5dp"
+            android:text="@string/strBtnBagi" />
+    </GridLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -85,7 +104,7 @@
             android:layout_width="100dp"
             android:layout_height="33dp"
             android:id="@+id/textView3"
-            android:text="Hasil :"/>
+            android:text="@string/strTvHasil"/>
 
         <TextView
             android:layout_width="250dp"
