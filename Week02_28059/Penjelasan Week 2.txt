@@ -1,0 +1,9 @@
+Latihan, Tugas dan Eksperimen:
+
+Q: Lakukan pengujian terhadap app anda dengan skenario di bawah ini:
+	a. Kosongkan Angka 1 dan Angka 2, lalu klik salah satu button:
+		- Jika angka 1 dan 2 dikosongkan, app akan crash dan akan menunjukan prompt "App has stopped". Error ini terjadi karena tidak ada nomor yang dapat dikalkulasikan. Untuk memperbaiki error ini, mungkin bisa ditambahkan input checker dimana jika kedua editText (angka1 dan angka2) kosong, maka akan ditampilkan prompt yang memberitahu user untuk memasuki value sebelum proses perhitungan dilakukan.
+	b. Kosongkan Angka 2, lalu klik button Bagi:
+		- Jika angka 2 dikosongkan, error seperti sebelumnya terjadi lagi, "App has stopped" ditampilkan pada prompt. Error ini terjadi karena seperti sebelumnya, nomor yang tidak ada dipakai untuk kalkulasi. Untuk memperbaiki error tersebut, menambahkan input checker juga bisa dilakukan, dimana jika salah satu angka tidak ada value namun kalkulasi tidak akan dilakukan.
+	c. Isi 0 pada Angka 2, lalu klik button Bagi:
+		- Jika angka 2 diisi dengan 0, hasil yang dihasilkan adalah "Infinity". Ini termasuk bukan error, namun jika ada error bisa saja karena apapun dibagi 0 menghasilkan jumlah yang infinite dan tidak dapat ditampilkan. Namun jika ada pengecekan dimana jika angka 2 diisi dengan 0, hasil bisa secara baik ditunjukkan ke user dimana hasilnya adalah "Infinity".
