@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UTS_Mobile</string>
+    <string name="profileText">
+        References :<br/>
+        https://guides.codepath.com/android/using-the-recyclerview#components-of-a-recyclerview <br/>
+        https://www.youtube.com/watch?v=kf2fxYLOiSo<br/>
+        https://www.youtube.com/watch?v=ZXoGG2XTjzU<br/>
+        https://www.geeksforgeeks.org/how-to-implement-press-back-again-to-exit-in-android/ <br/>
+        https://www.javatpoint.com/playing-audio-in-android-example<br/>
+        https://www.11zon.com/zon/android/get-duration-of-audio-file.php <br/>
+    </string>
+</resources>
