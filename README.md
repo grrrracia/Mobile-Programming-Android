@@ -1,4 +1,4 @@
-# MOBILE2021
+# Mobile Application Programming (IF633)
 
 This repository holds the code to my Mobile Programming Course. 
 They are all written using Android Studio that is running on API 21. 
